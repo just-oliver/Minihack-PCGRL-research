@@ -1,0 +1,10 @@
+---
+services:
+  minihack-notebook:
+    image: minihack:latest
+    ports:
+      - 8000:8888
+    environment:
+      - JUPYTER_TOKEN=supersecret69
+    volumes:
+      - ./:/workspace

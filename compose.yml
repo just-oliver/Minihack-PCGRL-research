@@ -1,0 +1,10 @@
+---
+services:
+  minihack-notebook:
+    image: minihack:latest
+    ports:
+      - "${LOCAL_PORT}:8888"
+    environment:
+      - JUPYTER_TOKEN=${SECRET_KEY}
+    volumes:
+      - ./:/workspace
